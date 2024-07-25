@@ -1,0 +1,50 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// add your utilities
+$utilities: map-merge(
+    (
+        // cursor
+        "cursor":
+            (
+                property: cursor,
+                class: cursor,
+                responsive: true,
+                values: auto pointer grab,
+            ),
+        // container
+        "container":
+            (
+                property: max-width,
+                class: container,
+                responsive: true,
+                values: (
+                    xs: 480px,
+                    sm: 576px,
+                    md: 768px,
+                    lg: 1024px,
+                ),
+            ),
+        // flex
+        "flex":
+            (
+                property: flex,
+                class: flex,
+                responsive: true,
+                values: (
+                    1: 0 1 100%,
+                    none: none,
+                    auto: auto,
+                ),
+            ),
+        // transition
+        "transition":
+            (
+                property: transition,
+                class: transition,
+                responsive: false,
+                values: $transitions,
+            )
+    ),
+    $utilities
+);

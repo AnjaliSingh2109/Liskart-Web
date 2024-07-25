@@ -1,0 +1,37 @@
+export const mockOemData=[
+    {
+        id:1,
+        image:"/assets/images/oem_01.png",
+        title:"ICML"
+    },
+    {
+        id:2,
+        image:"/assets/images/oem_02.png",
+        title:"TVS"
+    },
+    {
+        id:3,
+        image:"/assets/images/oem_03.png",
+        title:"ESCORTS"
+    },
+    {
+        id:4,
+        image:"/assets/images/oem_04.png",
+        title:"HONDA"
+    },
+    {
+        id:5,
+        image:"/assets/images/oem_05.png",
+        title:"L"
+    },
+    {
+        id:6,
+        image:"/assets/images/oem_06.png",
+        title:"General Motors"
+    },
+    {
+        id:7,
+        image:"/assets/images/oem_01.png",
+        title:"ICML"
+    }
+];

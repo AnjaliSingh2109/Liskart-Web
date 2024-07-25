@@ -1,0 +1,14 @@
+@import "/src/styles/scss/variables.module";
+.cartIcon {
+    .badge {
+        right: -$spacer;
+        top: -$spacer/2;
+        display: flex;
+        width: $spacer * 1.5;
+        height: $spacer * 1.5;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: normal;
+    }
+}

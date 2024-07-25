@@ -1,0 +1,90 @@
+.header{
+    width:100%;
+    height:80px;
+}
+
+
+.cont{
+    background-color: white;
+    width: 40%;
+    height:60%;
+    border-radius: 15px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input{
+        width:85%;
+        flex-grow: 1;
+        height:50px;
+        border-radius: 25px;
+        border:2px solid grey;
+        margin-top: 15px;
+    }
+    button{
+        color: white;
+        background-color:rgb(17, 66, 13);
+        width:85%;
+        height:50px;
+        border-radius: 25px;
+        //margin-top: 8px;
+        border-style: none;
+        margin-top: 15px;
+        font-size: 20px;
+        letter-spacing: -2;
+
+    }
+    .text{
+        margin-top: 15px;
+    }
+}
+.cont .input{
+    width:85%;
+}
+
+.main{
+    background-color: rgb(237, 237, 237);
+    width:100%;
+    height:650px;
+    border-style: none;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.segment{
+    height:500px;
+    padding-top: 3%;
+    h2{
+        left:40%;
+        font-weight: 900;
+    }
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+}
+.segmentContent{
+    width:53%;
+    padding-top: 4%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    //width:33%;
+    h2{
+        font-weight: 900;
+    }
+    p{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+}

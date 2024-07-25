@@ -1,0 +1,18 @@
+@import "/src/styles/scss/variables.module";
+
+.testiSlider {
+    :global {
+        .swiper-slide {
+            transition: map-get($transitions, "2_5");
+            &:not(.swiper-slide-active) {
+                opacity: 0.5;
+                transform: scale(0.5);
+                pointer-events: none;
+
+                .btn {
+                    display: none;
+                }
+            }
+        }
+    }
+}

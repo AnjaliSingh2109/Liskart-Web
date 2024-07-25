@@ -1,0 +1,56 @@
+@import "../scss/variables.module";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/utilities";
+
+* {
+    touch-action: manipulation;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+iframe {
+    display: block;
+    border: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+}
+
+:root {
+    @each $color, $value in $theme-colors {
+        --#{$prefix}#{$color}: #{$value};
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.text-sentence-case {
+    text-transform: lowercase;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}

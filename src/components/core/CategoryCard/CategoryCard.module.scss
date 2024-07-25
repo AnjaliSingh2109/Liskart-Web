@@ -1,0 +1,7 @@
+@import "/src/styles/scss/variables.module";
+
+.card {
+    &:hover {
+        background-color: lighten($secondary, 20%) !important;
+    }
+}

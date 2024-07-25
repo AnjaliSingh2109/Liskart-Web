@@ -1,0 +1,9 @@
+@import "/src/styles/scss/variables.module";
+
+.card {
+    outline: $spacer * 0.125 solid transparent;
+    outline-offset: (-$spacer * 0.125);
+    &:hover {
+        outline-color: $primary !important;
+    }
+}

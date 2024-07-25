@@ -1,0 +1,10 @@
+@import "/src/styles/scss/variables.module";
+
+.accordionHeader {
+    :global(.accordion-button) {
+        box-shadow: none !important;
+        &::after {
+            display: none;
+        }
+    }
+}

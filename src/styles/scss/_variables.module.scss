@@ -1,0 +1,271 @@
+// Prefix for :root CSS variables
+$variable-prefix: lis- !default;
+
+// scss-docs gray-color-variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #e4e6e9 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #7e8f86 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #1b1e1c !default;
+$black: #000 !default;
+
+// scss-docs-start gray-colors-map
+$grays: (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900,
+) !default;
+
+// colors
+$primary: #115c35 !default;
+$secondary: #fde82b !default;
+$success: #30d47f !default;
+$info: #0d6efd !default;
+$warning: #e9c33b !default;
+$danger: #cb4636 !default;
+$light: $gray-200 !default;
+$medium: $gray-500 !default;
+$dark: $gray-900 !default;
+
+// body colors
+$body-color: $dark !default;
+$headings-color: $dark !default;
+$shadow-color: $dark !default;
+
+// body bg
+$body-bg: $white !default; // dark mode
+$body-bg-dark: $dark !default; // dark mode
+
+// border colors
+$border-color: $light !default;
+
+// theme colors
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "medium": $medium,
+    "dark": $dark,
+    "black": $black,
+    "white": $white,
+) !default;
+
+// custom utilities
+$utilities: () !default;
+
+// spacing
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    2_5: $spacer * 0.75,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 2,
+    6: $spacer * 3,
+    7: $spacer * 4,
+) !default;
+
+$enable-negative-margins: true;
+$enable-shadows: true;
+
+// Font, line-height, and color for body text, headings, and more.
+// $font-family-base: "Poppins", sans-serif !default;
+// $font-size-root: 100% !default;
+$rfs-base-value: 0.675rem !default;
+$font-size-base: 0.875rem !default;
+$small-font-size: 0.75rem !default;
+$font-size-sm: $small-font-size !default;
+$font-size-lg: 1.875rem !default;
+
+$line-height-sm: 1.2 !default;
+$font-weight-base: 400 !default;
+
+// $headings-font-family: "Poppins", sans-serif !default;
+$headings-line-height: 1.4 !default;
+$headings-font-weight: 500 !default;
+
+// heading
+$h1-font-size: 2.25rem !default;
+$h2-font-size: 1.75rem !default;
+$h3-font-size: 1.5rem !default;
+$h4-font-size: 1.25rem !default;
+$h5-font-size: 1.125rem !default;
+$h6-font-size: 1rem !default;
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+    sm: $font-size-sm,
+    base: $font-size-base,
+    lg: $font-size-lg,
+) !default;
+$display-font-sizes: (
+    1: 5rem,
+    2: 4rem,
+    3: 3.5rem,
+    4: 3rem,
+    5: 2.75rem,
+    6: 2.5rem,
+) !default;
+
+// Links
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-decoration: none !default;
+
+// radius
+$border-radius-sm: $spacer * 0.25 !default;
+$border-radius: $spacer * 0.5 !default;
+$border-radius-lg: $spacer !default;
+$border-radius-xl: $spacer * 1.5 !default;
+$border-radius-xxl: $spacer * 2 !default;
+$border-radius-pill: $spacer * 50 !default;
+
+// Buttons + Forms
+$input-btn-font-size: $font-size-base !default;
+$input-btn-font-size-sm: $small-font-size !default;
+$input-btn-font-size-lg: $h6-font-size !default;
+$input-btn-focus-width: 0 !default;
+
+$btn-font-weight: 600 !default;
+$btn-font-size: $small-font-size !default;
+$btn-line-height: 1 !default;
+$btn-padding-x: $spacer * 1.25 !default;
+$btn-padding-x-sm: $spacer !default;
+$btn-padding-x-lg: $spacer * 2 !default;
+$btn-padding-y: $spacer * 0.75 !default;
+$btn-padding-y-sm: $spacer * 0.5 !default;
+$btn-padding-y-lg: $spacer !default;
+$btn-border-radius: $border-radius-pill !default;
+$btn-border-radius-sm: $border-radius-sm !default;
+$btn-border-radius-lg: $border-radius-lg !default;
+
+// input field
+$input-bg: $body-bg !default;
+$input-border-color: $medium !default;
+$input-border-width: 1px !default;
+$input-border-radius: $border-radius-pill !default;
+$input-border-radius-sm: $border-radius-pill !default;
+$input-border-radius-lg: $border-radius-pill !default;
+$input-color: $dark !default;
+$input-focus-border-color: $primary !default;
+$input-placeholder-color: $medium !default;
+$input-padding-x: $spacer !default;
+// $input-padding-x-sm: $spacer !default;
+// $input-padding-x-lg: $spacer !default;
+$input-padding-y: 0.53125rem !default;
+$input-btn-focus-box-shadow: none !default;
+$input-height: $spacer * 2.5 !default;
+$input-height-sm: $spacer * 2 !default;
+$input-height-lg: $spacer * 3 !default;
+$input-box-shadow: none !default;
+
+// container size
+$container-max-widths: (
+    xs: 100%,
+    sm: 100%,
+    md: 100%,
+    lg: 100%,
+    xl: 100%,
+    xxl: 1480px,
+) !default;
+
+// breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 769px,
+    lg: 1025px,
+    xl: 1200px,
+    xxl: 1440px,
+    xxxl: 1600px,
+) !default;
+
+// modal
+$modal-xl: 1280px !default;
+$modal-lg: 1024px !default;
+$modal-md: 767px !default;
+$modal-sm: 480px !default;
+
+// aspect ratios
+$aspect-ratios: (
+    "1x1": 100%,
+    "4x3": calc(3 / 4 * 100%),
+    "4x5": calc(5 / 4 * 100%),
+    "5x3": calc(3 / 5 * 100%),
+    "10x6": calc(6 / 10 * 100%),
+    "16x9": calc(9 / 16 * 100%),
+    "21x9": calc(9 / 21 * 100%),
+    "27x9": calc(9 / 27 * 100%),
+    "30x2": calc(2 / 30 * 100%),
+);
+
+// accordion
+$accordion-padding-y: 0;
+$accordion-padding-x: 0;
+$accordion-color: $gray-700;
+$accordion-bg: transparent;
+$accordion-border-width: 1px;
+$accordion-border-color: $light;
+$accordion-border-radius: 0;
+$accordion-inner-border-radius: 0;
+$accordion-body-padding-y: $spacer;
+$accordion-body-padding-x: 0;
+$accordion-button-padding-y: 0;
+$accordion-button-padding-x: 0;
+$accordion-button-color: $dark;
+$accordion-button-bg: $accordion-bg;
+$accordion-button-active-bg: $accordion-bg;
+$accordion-button-active-color: $accordion-button-color;
+$accordion-button-focus-box-shadow: none;
+// $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$dark}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+// $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$dark}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+
+// transition
+$transitions: (
+    "1": all 0.1s ease-in-out,
+    "1_5": all 0.15s ease-in-out,
+    "2": all 0.2s ease-in-out,
+    "2_5": all 0.25s ease-in-out,
+    "3": all 0.3s ease-in-out,
+);
+
+// popover
+$popover-font-size: $font-size-base;
+$popover-border-radius: $border-radius;
+
+// export
+:export {
+    primary: $primary;
+    secondary: $secondary;
+    success: $success;
+    info: $info;
+    warning: $warning;
+    danger: $danger;
+    light: $light;
+    medium: $medium;
+    dark: $dark;
+    black: $black;
+    white: $white;
+    spacer: $spacer;
+}

@@ -1,0 +1,12 @@
+{
+    "About": {
+        "title": "About us"
+    },
+    "global": {
+        "add_to_cart": "Add to cart",
+        "part_number": "Part Number",
+        "segment": "Segment",
+        "brand": "Brand",
+        "oem": "OEM"
+    }
+}

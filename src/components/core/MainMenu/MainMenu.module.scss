@@ -1,0 +1,28 @@
+@import "/src/styles/scss/variables.module";
+
+.mainMenu {
+    // menu style for desktop
+    &.desktop {
+        display: flex;
+        li {
+            margin-left: $spacer * 1.5;
+            &:first-child {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            a {
+                color: $black;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    &.mobile {
+        // menu style for mobile
+        li {
+            // color: #ff0;
+        }
+    }
+}

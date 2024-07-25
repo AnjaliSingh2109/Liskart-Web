@@ -1,0 +1,12 @@
+{
+    "About": {
+        "title": "हमारे बारे में"
+    },
+    "global": {
+        "add_to_cart": "कार्ट में जोड़ें",
+        "part_number": "भाग संख्या",
+        "segment": "खंड",
+        "brand": "ब्रांड",
+        "oem": "OEM"
+    }
+}

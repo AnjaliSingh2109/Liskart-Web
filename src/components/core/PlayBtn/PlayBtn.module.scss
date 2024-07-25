@@ -1,0 +1,7 @@
+@import "/src/styles/scss/variables.module";
+
+.button {
+    &:hover {
+        background-color: rgba($secondary, 0.25) !important;
+    }
+}

@@ -1,0 +1,16 @@
+@import "/src/styles/scss/variables.module";
+@import "~/node_modules/bootstrap/scss/mixins/breakpoints";
+
+.items {
+    &:after {
+        @include media-breakpoint-up(xl) {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -$spacer;
+            height: 100%;
+            width: 1px;
+            background-color: $light;
+        }
+    }
+}

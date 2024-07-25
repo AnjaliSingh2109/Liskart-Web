@@ -1,0 +1,96 @@
+@import "/src/styles/scss/variables.module";
+@import "~/node_modules/bootstrap/scss/mixins/breakpoints";
+
+.customSwiper {
+    :global {
+        .swiper {
+            &-wrapper {
+                .swiper-slide {
+                    height: auto;
+                }
+            }
+            &-button {
+                &-next,
+                &-prev {
+                    width: $spacer * 1.5;
+                    height: $spacer * 1.5;
+                    border-radius: 50%;
+                    background-color: $dark;
+                    color: $white;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    bottom: $spacer * 0.6;
+                    top: auto;
+
+                    @include media-breakpoint-up(md) {
+                        width: $spacer * 2;
+                        height: $spacer * 2;
+                        bottom: $spacer;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        bottom: auto;
+                        top: 50%;
+                    }
+
+                    &:after {
+                        font-size: $font-size-base * 0.6;
+                        font-weight: 700;
+
+                        @include media-breakpoint-up(lg) {
+                            font-size: map-get($font-sizes, 6);
+                        }
+                    }
+                }
+                &-next {
+                    @include media-breakpoint-up(sm) {
+                        right: auto;
+                        left: $spacer * 3;
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        left: $spacer * 3.5;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        left: auto;
+                        right: $spacer;
+                    }
+                }
+                &-prev {
+                    right: $spacer * 2.5;
+                    left: auto;
+                    @include media-breakpoint-up(sm) {
+                        right: auto;
+                        left: $spacer;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        left: $spacer;
+                    }
+                }
+            }
+
+            &-pagination {
+                display: flex;
+                align-items: center;
+                gap: $spacer * 0.5;
+                &-bullet {
+                    width: $spacer * 0.625;
+                    height: $spacer * 0.625;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    margin: 0 !important;
+                    border: $spacer * 0.125 solid $secondary;
+                    opacity: 1;
+                    transition: map-get($transitions, "2_5");
+                    &-active {
+                        background-color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}
